@@ -1,0 +1,85 @@
+{% extends 'comp/base.html' %}
+{% load static %}
+
+{% block title %}
+    <title>Главная страница</title>
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+
+{% block content %}
+    <table class="table table-dark table-bordered border-light" style="width: 1000px; margin-top: 30px; margin-left: 300px;">
+      <div class="card bg-dark" style="margin-top: 70px; margin-left: 630px; width: 300px;">
+        <div class="card-body">
+           <h3 class="text-white" style="padding-left: 45px;">Компьютеры</h3>
+        </div>
+      </div>
+  <thead>
+    <tr class="table-dark">
+      <th class="text-white">Общий зал</th>
+      <th class="text-white">VIP зал</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1ч.- 110р.</td>
+      <td>1ч - 200р.</td>
+    </tr>
+    <tr>
+      <td>2ч - 150р.</td>
+      <td>2ч - 250р.</td>
+    </tr>
+    <tr>
+      <td>3ч - 200р.</td>
+      <td>3ч - 300р.</td>
+    </tr>
+    <tr>
+      <td>4ч - 340р.</td>
+      <td>4ч - 400р.</td>
+    </tr>
+    <tr>
+      <td>5ч - 380р.</td>
+      <td>5ч - 500р.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table table-dark table-bordered border-light" style="width: 1000px; margin-top: 30px; margin-left: 300px;">
+      <div class="card bg-dark" style="margin-top: 50px; margin-left: 630px; width: 300px;">
+        <div class="card-body">
+           <h3 class="text-white" style="padding-left: 60px;">Приставки</h3>
+        </div>
+      </div>
+  <thead>
+    <tr class="table-dark">
+      <th class="text-white">Общий зал</th>
+      <th class="text-white">VIP зал</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1ч.- 125р.</td>
+      <td>1ч - 200р.</td>
+    </tr>
+    <tr>
+      <td>2ч - 250р.</td>
+      <td>2ч - 320р.</td>
+    </tr>
+    <tr>
+      <td>3ч - 370р.</td>
+      <td>3ч - 420р.</td>
+    </tr>
+    <tr>
+      <td>4ч - 450р.</td>
+      <td>4ч - 520р.</td>
+    </tr>
+    <tr>
+      <td>5ч - 500р.</td>
+      <td>5ч - 650р.</td>
+    </tr>
+  </tbody>
+</table>
+
+{% endblock %}

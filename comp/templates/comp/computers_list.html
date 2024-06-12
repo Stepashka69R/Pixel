@@ -1,0 +1,36 @@
+{% extends 'comp/base.html' %}
+{% load static %}
+
+{% block title %}
+<title>Диски</title>
+{% endblock %}
+
+{% block css %}
+  <link rel="stylesheet" href="{% static 'css/cards.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="card-deck">
+{% for comp in comps %}
+<div class="card text-white bg-dark" style="width: 18rem;">
+  <div class="card-body">
+    <div class="user-con">
+      <h3 class="card-title">{{ comp.name }}</h3>
+    </div>
+     <div class="form-outline datetimepicker" style="width: 200px">
+          <label for="datetimepickerExample" class="form-label">Доступная дата и время</label>
+          <input type="text" class="form-control" value="22/12/2020, 14:12:56" id="datetimepickerExample">
+        </div>
+
+    <p class="card-text" style="margin-top: 20px;">Стоимость: {{ comp.price_per_hour }} руб</p>
+
+     <form method="post" action="">
+       {% csrf_token %}
+      <button type="submit" class="btn btn-outline-light">Забронировать</button>
+    </form>
+  </div>
+</div>
+  {% endfor %}
+</div>
+{% endblock %}

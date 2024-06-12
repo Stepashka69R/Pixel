@@ -1,0 +1,22 @@
+body {
+    background-image: url('../img/compman.jpg');
+    background-size: cover;
+}
+
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
+  }
+
+  .card {
+    margin-bottom: 20px;
+    flex-basis: calc(33.333% - 10px);
+    margin-right: 100px;
+    margin-left: 50px;
+  }
+
+  .user-con{
+    margin-left: 150px;
+  }
